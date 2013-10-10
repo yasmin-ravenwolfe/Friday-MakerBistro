@@ -5,10 +5,6 @@ Makerbistro::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
-  resources :menu_items do
-    resources :ingredients, only: [:create]
-  end
-
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
